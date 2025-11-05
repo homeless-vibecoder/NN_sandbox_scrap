@@ -1,0 +1,33 @@
+{
+    "model": {
+        "dim": 8,
+        "hidden_dim": 48,
+        "num_layers": 4
+    },
+    "train": {
+        "steps": 1500,
+        "batch_size": 128,
+        "lr": 0.001,
+        "input_scale": 1.0,
+        "p": 4,
+        "q": 5,
+        "num_iters": null,
+        "min_alpha": 0.1
+    },
+    "paths": {
+        "weights_dir": "weights",
+        "F_filename": "F^(1).pt"
+    },
+    "run": {
+        "components": [
+            [
+                4,
+                5
+            ],
+            [
+                4,
+                5
+            ]
+        ]
+    }
+}
