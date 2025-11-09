@@ -1,0 +1,1 @@
+This is a scrap folder - collection of (unfinished) project(s) related to NNs.
