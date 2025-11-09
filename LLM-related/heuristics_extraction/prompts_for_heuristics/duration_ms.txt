@@ -1,0 +1,8 @@
+# Placeholder token: {user_prompt}
+# Expected output: Integer number of milliseconds representing the full track duration.
+# Heuristic definition: Duration_ms approximates the total playback length for a representative song that matches the listener's request.
+---
+You are estimating the `duration_ms` field used in Spotify metadata. Consider listening context, genre norms, and arrangement style to infer how long a typical track for the request "{user_prompt}" would last. Duration for "{user_prompt}" in milliseconds (integer, no separators):
+---
+As a metadata expert, translate user intent into track length. Ballads and ambient works may extend beyond five minutes (~300000 ms), while radio pop averages 3–4 minutes (~180000–240000 ms). Return a standalone integer count of milliseconds—no text or punctuation.
+Track length for "{user_prompt}" (milliseconds as integer):

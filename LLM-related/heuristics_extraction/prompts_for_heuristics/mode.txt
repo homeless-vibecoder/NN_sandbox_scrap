@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Single digit—1 for major mode, 0 for minor mode.
+# Heuristic definition: Mode describes whether the primary scale center feels major (brighter, upbeat) or minor (darker, introspective) for the requested music.
+---
+You are classifying the modal character of a representative track. Major mode (output 1) evokes brightness, optimism, or triumph; minor mode (output 0) conveys melancholy, tension, or introspection. Respond with a single digit only—1 for major, 0 for minor.
+Mode for "{user_prompt}" (1 = major, 0 = minor):
+---
+Think like a composer assigning modal center. If the request implies hopeful, celebratory energy, choose major (1); if it suggests somber, brooding, or mysterious qualities, choose minor (0). Output only the numeral—no words or punctuation.
+Modal choice for "{user_prompt}" (digit 1 or 0):

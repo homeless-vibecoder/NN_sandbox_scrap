@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Positive numeric tempo in beats per minute (BPM), optionally with decimals.
+# Heuristic definition: Tempo captures the pulse speed of the representative track; typical ranges span from 40 BPM (very slow) to 200 BPM (very fast).
+---
+You are estimating the tempo of a track that matches the listener request "{user_prompt}". Consider style cues—downtempo ambient resides near 60 BPM, relaxed pop around 90–110 BPM, energetic dance 120–135 BPM, frenetic genres 150 BPM and above. Respond with a positive numeric literal only, decimals permitted, omit commentary.
+Tempo for "{user_prompt}" in BPM (positive number):
+---
+Think like a DJ selecting tracks. Map the request "{user_prompt}" to the beat rate that best suits the described mood or energy. Return a single numeric BPM value—no units spelled out, no narrative.
+Beat rate for "{user_prompt}" (BPM, numeric only):

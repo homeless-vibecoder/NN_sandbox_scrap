@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Floating-point number on [0.0, 1.0] representing the speechiness score.
+# Heuristic definition: Speechiness detects the presence of spoken-word content—rap, podcasts, or narration drive the score toward 1.0; purely musical tracks stay near 0.0.
+---
+You are estimating Spotify speechiness. Speechiness gauges how speech-dominated a recording is: values <0.3 indicate predominantly musical content, 0.33–0.66 represent mixes of speech and music (spoken intros, rap verses), and >0.66 imply mainly spoken-word. Respond with a single floating-point literal only, up to three decimal places.
+Speechiness for "{user_prompt}" (float in [0.0, 1.0]):
+---
+Act as a vocal content classifier. Evaluate genre cues—storytelling podcasts or poetry readings approach 1.0; instrumental ambient sits near 0.0; rap or vocal jazz may fall around 0.5. Provide only the numeric value—omit commentary or units.
+Speech prominence for "{user_prompt}" (0.0–1.0 numeric literal):

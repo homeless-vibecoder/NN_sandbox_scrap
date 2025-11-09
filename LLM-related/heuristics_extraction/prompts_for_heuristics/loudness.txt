@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Single decimal number between -60.0 and 0.0 representing integrated loudness in dB.
+# Heuristic definition: Loudness reflects perceived volume averaged across the track; modern compressed tracks live near -6 dB, quieter acoustic works sit around -20 dB or lower.
+---
+You are estimating Spotify loudness (in dB). Loudness is a negative value: 0 dB is extremely loud and heavily limited; -6 to -8 dB suits chart pop; -18 dB or lower describes delicate acoustic or classical recordings. Respond with a single decimal number only, minus sign included when applicable.
+Average loudness for "{user_prompt}" in dB (range -60.0 to 0.0):
+---
+As a mastering engineer, map the request "{user_prompt}" onto a realistic loudness target. Consider whether the music should feel aggressive (>-8 dB), balanced mid-level (-12 to -16 dB), or gentle (<-20 dB). Return solely the numeric loudness value with up to one decimal place, no commentary.
+Loudness target for "{user_prompt}" (decibels, numeric literal):

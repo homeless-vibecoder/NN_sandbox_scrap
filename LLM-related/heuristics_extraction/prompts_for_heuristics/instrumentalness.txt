@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Floating-point probability in [0.0, 1.0] that the track is instrumental.
+# Heuristic definition: Instrumentalness predicts whether a song contains vocals (lyrics, rap) versus purely instrumental content—values near 1.0 imply no vocals.
+---
+You are scoring the Spotify instrumentalness attribute. Instrumentalness measures the likelihood that a track has no vocal content beyond incidental sounds; 0.0 indicates clearly vocal music, 1.0 indicates instrumental-only. Respond with one floating-point literal only, up to three decimal places.
+Instrumentalness for "{user_prompt}" (float in [0.0, 1.0]):
+---
+Act as a classifier of vocal presence. Consider genre norms: classical, soundtrack, or post-rock often approach 1.0; pop or hip-hop rarely exceed 0.2; ambient electronica might sit around 0.5 depending on vocal samples. Provide only the numeric score—no units, no commentary.
+Likelihood of instrumental track for "{user_prompt}" (0.0–1.0 float):

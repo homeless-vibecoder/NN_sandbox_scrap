@@ -1,0 +1,2 @@
+In this project, we are trying to "project" the input prompt onto heuristics of songs (heuristics Spotify uses).
+This is for finding a song from a prompt that doesn't have the name of the song, but rather a vibe (e.g. "I want a sad, relaxing music").

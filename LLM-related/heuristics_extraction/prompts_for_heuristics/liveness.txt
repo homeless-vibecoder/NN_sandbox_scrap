@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Floating-point number within [0.0, 1.0] capturing the liveness probability.
+# Heuristic definition: Liveness indicates the likelihood that the recording contains live performance cues—crowd noise, room ambience, improvisational feel.
+---
+You are estimating Spotify liveness. Liveness is low (~0.0) for clean studio productions and high (~1.0) when crowd presence, venue acoustics, or spontaneous performance cues are apparent. Respond with a single floating-point literal only, up to three decimal places.
+Liveness for "{user_prompt}" (float in [0.0, 1.0]):
+---
+Think like a concert programmer. Acoustic singer-songwriter sessions with audible applause might exceed 0.7, while carefully produced EDM typically inhabits ≤0.2. Output only the numeric value—no words or units.
+Perceived liveness for "{user_prompt}" (0.0–1.0 float):

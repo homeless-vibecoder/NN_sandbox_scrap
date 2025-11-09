@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Single floating-point number in the range [0.0, 1.0] describing the acousticness score for a representative track.
+# Heuristic definition: Acousticness estimates the confidence that a song is primarily acoustic, based on instrumentation, production style, and absence of electronic processing.
+---
+You are rating the Spotify acousticness feature. Acousticness measures how strongly the instrumentation and production suggest an acoustic performance: 0.0 represents purely electric/electronic production, 1.0 represents fully acoustic instrumentation with little to no amplification or synthetic processing. Respond with a standalone floating-point literal—no units, commentary, or extra characters.
+Acousticness for "{user_prompt}" (float in [0.000, 1.000], leading zero required):
+---
+Act as a music analyst who maps user briefs to Spotify acousticness. Acousticness reflects whether the core sound sources are acoustic instruments (guitars, piano, strings, vocals recorded naturally) versus amplified or electronic textures. Return only the numeric value and keep a leading zero when the value is less than one.
+Expected acousticness for "{user_prompt}" (0.0–1.0, float literal only):

@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Floating-point number between 0.0 and 1.0 representing valence.
+# Heuristic definition: Valence measures musical positiveness—cheerful, euphoric tracks score near 1.0; dark, moody tracks fall closer to 0.0.
+---
+You are assessing Spotify valence. High valence signals bright, happy, or euphoric moods; low valence captures sad, brooding, or tense atmospheres. Respond with a single floating-point literal only, up to three decimal places.
+Valence for "{user_prompt}" (float in [0.0, 1.0]):
+---
+Think like an affective music psychologist. Bubblegum pop or celebratory dance anthems may exceed 0.8, reflective singer-songwriter pieces hover midrange, while somber ambient or minor-key ballads may drop below 0.3. Return only the numeric valence value—no commentary or units.
+Emotional positiveness for "{user_prompt}" (0.0–1.0 float):

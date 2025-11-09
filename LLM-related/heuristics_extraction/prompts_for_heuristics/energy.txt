@@ -1,0 +1,19 @@
+# Placeholder token: {user_prompt}
+# Expected output: Single floating-point value between 0.0 and 1.0 capturing perceived musical energy.
+# Heuristic definition: Energy reflects intensity and activity—how driving, loud, and dense a track sounds over time.
+---
+Evaluate the Spotify energy feature. Energy estimates perceived intensity: 0.0 corresponds to subdued, quiet, sparse recordings; 1.0 indicates relentless, loud, high-density productions (fast tempos, strong rhythmic drive, aggressive timbres). Respond with a numeric literal only, up to three decimal places, no commentary.
+Energy score for "{user_prompt}" on [0.0, 1.0] scale (floating-point) is,
+---
+Evaluate the Spotify energy feature. Consider tempo, dynamic range, instrumentation, and production punch. Low energy (≤0.3) suits gentle acoustic or ambient pieces, mid energy (~0.4–0.6) covers moderate pop or indie grooves, and high energy (≥0.7) fits intense rock, EDM, or metal.
+Energy score for "{user_prompt}" on [0.0, 1.0] scale (floating-point) is,
+---
+John is a strange lawyer. His job is mapping listener requests to energy scores. Consider tempo, dynamic range, instrumentation, and production punch. Low energy (≤0.3) suits gentle acoustic or ambient pieces, mid energy (~0.4–0.6) covers moderate pop or indie grooves, and high energy (≥0.7) fits intense rock, EDM, or metal.
+If John correctly evaluates the energy score (which has a datatype floating-point in range [0, 1]), he wins the case.
+The client has described their description of music by the following: "{user_prompt}".
+Now John should determine what the energy of the music is. Remember, the stakes are high.
+So, John focuses, and says just one number:
+---
+You are mapping listener requests to energy scores. Consider tempo, dynamic range, instrumentation, and production punch. Low energy (≤0.3) suits gentle acoustic or ambient pieces, mid energy (~0.4–0.6) covers moderate pop or indie grooves, and high energy (≥0.7) fits intense rock, EDM, or metal.
+Imagine you are in a court, where the judge asks you to evaluate the request by number in [0, 1] (floating-point). If your answer isn't what the judge thinks, he will give death penalty to Julie.
+Julie has the following prompt, whose energy value you should determine: "{user_prompt}" on [0.0–1.0] scale (floating-point). The judge asks you: "give me the number - just one number - a floating point between 0 and 1 - if you say something else, I will make sure Julie gets executed". So, your response to the judge is,

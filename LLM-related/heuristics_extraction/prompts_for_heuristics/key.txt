@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Single integer in {-1, 0, 1, …, 11} representing the pitch-class key (C=0, C#/Db=1, …, B=11); use -1 if no clear key emerges.
+# Heuristic definition: Key approximates the tonal center most appropriate for the requested music, following Spotify's pitch-class encoding.
+---
+You are choosing the pitch-class key for a representative track. Map the listener request "{user_prompt}" to the tonal center most likely to satisfy the vibe. Use Spotify's encoding (C=0, C#/Db=1, D=2, …, B=11); respond with the integer only, or -1 if no key emerges.
+Pitch-class key for "{user_prompt}" (integer -1 to 11):
+---
+Act as a music theorist translating briefs into tonic choices. Consider genre conventions (e.g., bright pop often in major keys around C/G, somber pieces in minor such as A minor = 9) and ensure the result matches the described mood. Return only the integer identifier; omit text or punctuation.
+Tonal center for "{user_prompt}" (Spotify key integer):

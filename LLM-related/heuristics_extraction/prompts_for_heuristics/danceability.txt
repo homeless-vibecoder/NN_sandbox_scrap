@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Single floating-point value between 0.0 and 1.0 indicating Spotify danceability.
+# Heuristic definition: Danceability measures how suitable a track is for dancing, blending tempo, rhythm stability, beat strength, and overall regularity.
+---
+You are evaluating the Spotify danceability metric. Danceability combines rhythmic stability, tempo comfort, beat clarity, and groove. Scores approach 0.0 when music is arrhythmic, slow, or diffuse, while scores near 1.0 indicate steady, propulsive beats ideal for dancing. Respond with a single floating-point literal only—no words, punctuation, or units.
+Danceability for "{user_prompt}" (float in [0.000, 1.000]):
+---
+Act as a curator translating user intents into danceability scores. High danceability (≥0.7) corresponds to confident four-on-the-floor or disco grooves; medium (~0.4–0.6) reflects moderate rhythm or swing; low (≤0.3) suggests free-form, ambient, or rubato pieces. Keep a trailing digit after the decimal and exclude any commentary.
+Danceability value for "{user_prompt}" (0.0–1.0, numeric literal only):

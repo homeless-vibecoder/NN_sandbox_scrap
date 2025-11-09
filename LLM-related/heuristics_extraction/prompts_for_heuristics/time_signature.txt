@@ -1,0 +1,9 @@
+# Placeholder token: {user_prompt}
+# Expected output: Integer representing the time signature numerator (beats per bar).
+# Heuristic definition: Time_signature encodes the count of beats in each measure for the representative track—common values include 3, 4, and 6, but any positive integer is possible.
+---
+You are selecting the time signature numerator for music matching "{user_prompt}". Consider rhythmic feel: 4 implies common time grooves, 3 or 6 suggest waltz or compound meters, 5 or 7 indicate irregular progressive patterns. Respond with a single integer only, no commentary.
+Time signature numerator for "{user_prompt}" (positive integer):
+---
+Act as a conductor assigning meter. Evaluate whether the request evokes straightforward 4/4 pop, lilting 3/4 folk, swaying 6/8 ballads, or adventurous odd meters. Output only the integer numerator—omit text or punctuation.
+Beats per bar for "{user_prompt}" (integer):
